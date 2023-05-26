@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="detheading">Student Details</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>STU_ID</th>
+                <th>S_NAME</th>
+                <th>DEPT</th>
+                <th>PERCENTAGE</th>
+                <th>GRADE</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <h1 id="hiddenheading" class="hiddenheading">Table Hidden</h1>
+    <br>
+    <label for="studid">Student ID</label>
+    <input type="text" name="stuid" id="stuid" required>
+    <b id="stuidcheck">Enter valid student ID</b><br><br>
+    <label for="sname">Student Name</label>
+    <input type="text" name="sname" id="sname">
+    <b id="snamecheck">Enter valid student name</b><br><br>
+    <label for="dept">Department</label>
+    <input type="text" name="dept" id="dept">
+    <b id="deptcheck">Enter valid department</b><br><br>
+    <label for="perc">Percentage</label>
+    <input type="text" id="perc" name="perc">
+    <b id="perccheck">Enter valid percentage</b><br><br>
+    <label for="grade">Grade</label>
+    <input type="text" id="grade" name="grade">
+    <b id="gradecheck">Enter valid grade</b><br><br>
+    <div class="">
+        <button id="add">Add</button>
+        <button id="hideshow">Show/Hide</button>
+        <button id="empty">Empty</button>
+        <button id="undo">Undo</button>
+    </div>
+</body>
+
+</html>

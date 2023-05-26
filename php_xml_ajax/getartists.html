@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function xml() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    func(this);
+                }
+            };
+            xmlhttp.open("GET", "artists.xml", true);
+            xmlhttp.send();
+        }
+        function func(xml) {
+            var txt = "<table><tr><th>Name</th><th>Artist</th>";
+            var data = xml.responseXML;
+            var titles = data.getElementsByTagName("title");
+            var artists = data.getElementsByTagName("artist");
+            var countries = data.getElementsByTagName("country");
+            for (var i = 0; i < artists.length; i++) {
+                txt += "<tr><td>" + titles[i].childNodes[0].nodeValue + "</td>";
+                txt += "<td>" + artists[i].childNodes[0].nodeValue + "</td></tr>";
+            }
+            txt += "</table>";
+            document.getElementById("test").innerHTML = txt;
+        }
+    </script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="xml()">Get data</button>
+    <p id="test"></p>
+</body>
+
+</html>

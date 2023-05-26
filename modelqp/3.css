@@ -1,0 +1,66 @@
+*{
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.whitebox{
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    background-color: white;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+input{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(232, 232, 232);
+    width: 80%;
+    border-radius: 5px;
+    height: 20px;
+    border: solid lightgrey;
+}
+
+.buttons{
+    background-color: white;
+    width: 80%;
+}
+
+.in{
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+}
+
+.up{
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    width: 40%;
+}
+
+.forgot{
+    color: white;
+    font-weight: bold;
+}
+
+a{
+    color: yellow;
+}

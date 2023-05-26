@@ -1,0 +1,17 @@
+body{
+    background-color:darkslategray;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.form-box{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px; */
+    background-color:lightyellow;
+    width: 500px;
+    height: 600px;
+}

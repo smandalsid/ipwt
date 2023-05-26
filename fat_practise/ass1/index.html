@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="form-box">
+        <h1>Travel Reservation Form</h1>
+        <h3>* denotes mandatory</h3>
+        <form action="" name="form" onsubmit="return(validate())">
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"><br><br>
+            <label for="package">package</label>
+            <select name="package" id="package">
+                <option value="goa">goa</option>
+                <option value="kashmir">kashmir</option>
+                <option value="andaman">andaman</option>
+            </select><br><br>
+            <label for="doa">Date of Arrival</label>
+            <input type="date" name="doa" id="doa"><br><br>
+            <label for="nop">Number of persons</label>
+            <input type="number" name="nop" id="nop"><br><br>
+            <label for="avail">What would you want to avail</label><br>
+            <input type="checkbox" name="avail" value="boarding" id="boarding"><label for="boarding">boarding</label><br>
+            <input type="checkbox" name="avail" value="fooding" id="fooding"><label for="fooding">fooding</label><br>
+            <input type="checkbox" name="avail" value="sightseeing" id="sightseeing"><label for="sightseeing">sightseeing</label><br><br>
+            <label for="discount">Discount coupon</label>
+            <input type="text" name="discount" id="discount"><br><br>
+            <label for="conditions">Terms and Conditions*</label><br>
+            <input type="radio" name="conditions" value="agree" id="agree"><label for="agree">I Agree</label><input type="radio" name="conditions" id="disagree" value="disagree"><label for="disagree">I Disagree</label><br><br>
+            <input type="submit" value="Complete Reservation">
+        </form>
+    </div>
+</body>
+</html>

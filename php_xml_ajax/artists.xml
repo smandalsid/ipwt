@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <cd>
+        <title>Title1</title>
+        <artist>Artist1</artist>
+        <country>India</country>
+    </cd>
+    <cd>
+        <title>Title2</title>
+        <artist>Artist2</artist>
+        <country>USA</country>
+    </cd>
+    <cd>
+        <title>Title3</title>
+        <artist>Artist3</artist>
+        <country>Russia</country>
+    </cd>
+</catalog>

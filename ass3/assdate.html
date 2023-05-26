@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assdate.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form" onsubmit="return(validate())">
+        <fieldset>
+            <legend>Sign up</legend>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter Name"><br><br>
+            <label for="mob">Mobile Number</label><br>
+            <input type="text" name="mob" id="mob" placeholder="Enter mobile number"><br><br>
+            <label for="email">Email</label><br>
+            <input type="text" name="email" id="email" placeholder="Enter you Email ID"><br><br>
+            <label for="dob">Date Of Birth</label><br>
+            <input type="date" name="dob" id="dob"><br><br>
+            <!-- <label for="year">Year</label>
+            <input type="text" name="year" id="year" size="3" maxlength="4" placeholder="year"> -->
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+    <p id="day"></p>
+    <p id="month"></p>
+    <p id="year"></p>
+</body>
+</html>

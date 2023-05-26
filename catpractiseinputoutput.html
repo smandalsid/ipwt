@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" oninput="res.value=price.valueAsNumber*quantity.valueAsNumber">
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" min="0">
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" id="quantity">
+        <label for="res">Result</label>
+        <output name="res" id="res"></output>
+        <input type="submit">
+    </form>
+</body>
+</html>

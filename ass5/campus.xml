@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<VIT>
+    <Campus>
+        <Name>VIT Vellore</Name>
+        <course>B.Tech with Spec in Bioinformatics</course>
+        <course>B.Tech with Spec in IOT</course>
+        <course>B.Tech with Spec in Information Security</course>
+    </Campus>
+    <Campus>
+        <Name>VIT Chennai</Name>
+        <course>B.Tech with Spec in Cyber Physical Systems</course>
+        <course>B.Tech with Spec in Artificial Intelligence and Robotics</course>
+        <course>B.Tech with Spec in AI and ML</course>
+    </Campus>
+</VIT>

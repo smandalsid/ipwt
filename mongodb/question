@@ -1,0 +1,25 @@
+Write a Node.js and MongoDB script to perform CRUD operations on a collection named "ecommerce_shipment_order_details". The collection should have the following fields:
+
+order_id (string, unique)
+customer_name (string)
+customer_email (string)
+customer_address (string)
+product_name (string)
+quantity (number)
+total_price (number)
+order_status (string)
+The script should be able to perform the following operations:
+
+Create a new order: given a JSON object with the order's data, insert it into the "ecommerce_shipment_order_details" collection. If the order_id already exists in the collection, return an error message.
+
+Read an order: given an order_id, retrieve the order's data from the "ecommerce_shipment_order_details" collection and return it as a JSON object. If the order does not exist, return an error message.
+
+Update an order: given an order_id and a JSON object with the order's new data, update the corresponding order in the "ecommerce_shipment_order_details" collection. If the order_id already exists in the collection (except for the order being updated), return an error message.
+
+Delete an order: given an order_id, delete the corresponding order from the "ecommerce_shipment_order_details" collection. If the order does not exist, return an error message.
+
+List all orders: retrieve all the orders from the "ecommerce_shipment_order_details" collection and return them as an array of JSON objects.
+
+List orders by status: given an order_status, retrieve all the orders with that status from the "ecommerce_shipment_order_details" collection and return them as an array of JSON objects.
+
+Your solution should be written using the official MongoDB driver for Node.js.

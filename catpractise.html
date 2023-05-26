@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="catpractise.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/catpractise.css">
+</head>
+
+<body>
+    <form action="" name="form" method="get" onsubmit="return(validate())" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" min="0" max=10 step="2" required placeholder="lol"
+            pattern="[a-zA-Z]{10}" tabindex="2" readonly>
+        <input type="range" min="0" max="8" name="range" step="2" value="6">
+        <input type="checkbox" id="lol" checked name="emotion" value="lol">
+        <label for="lol">lol</label>
+        <input type="reset">
+        <input type="submit">
+        <select name="choice" id="">
+            <option value="1" disabled>1</option>
+            <option value="2">2</option>
+            <option value="3" selected label="ok">3</option>
+        </select>
+        <label for="browser">Select browser</label>
+        <input name="browser" id="browser" list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Safari">ok</option>
+        </datalist>
+        <input type="file" multiple required>
+        <label for="cars">Select Car</label>
+        <select name="cars" id="cars">
+            <option value="">Choose Your Car</option>
+            <optgroup label="indian">
+                <option value="scorpio">scorpio</option>
+                <option value="bolero" disabled>bolero</option>
+            </optgroup>
+            <optgroup label="foreign" disabled>
+                <option value="bmw">bmw</option>
+                <option value="mercedes">mercedes</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="textarea">Textarea</label>
+        <textarea name="" id="textarea" cols="30" rows="10" autofocus wrap="soft"></textarea>
+        <iframe sandbox src="subscribe.html" height="200px" width="500px" title="TEST TITLE"
+            style="border: 2px solid red;"></iframe>
+        <br>
+        <audio src="/song" controls></audio>
+        <video src="/video.mp4" controls height="100px" width="50px"></video>
+
+        <br>
+
+        <img src="/workplace.jpg" usemap="#workplace">
+        <map name="workplace">
+            <area shape="rect" coords="34,44,270,350" href="1#" target="_blank" alt="">
+            <area shape="circle" coords="337,300,44" href="2#" alt="" target="_blank">
+            <area shape="default" coords="" href="" alt="">
+        </map>
+
+        <div class="animation">
+            
+        </div>
+
+        <div class="multicol">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et optio, beatae recusandae ullam repellat eligendi est consequuntur. Repellendus atque quas pariatur est necessitatibus, hic commodi, labore odio tempora assumenda accusamus enim aliquam corrupti veniam excepturi praesentium, et optio? <img class="floatimg" src="/submit.png" height="100px" width="100px">Cumque, quas debitis? Eos, rem repellendus illo beatae iste unde amet voluptatum eaque quaerat, voluptates culpa dolore. Nesciunt id rerum dignissimos recusandae fugit veniam. <em>Obcaecati</em> odit nesciunt aliquid nemo consequatur illo, vel laudantium a nam blanditiis. Similique quasi dignissimos, ducimus esse earum a ab odio. Amet minima eum repellat voluptatibus maxime! Nostrum fuga dolorem adipisci molestias sint tempora sunt, suscipit magnam quam!
+        </div>
+        <img src="/submit.png" height="100px" width="100px" style="position: relative; top: 5px; right: 5px;">
+        <a href="#"></a>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo et eum eligendi iusto odit praesentium hic iure illum, sint neque quo facilis. Temporibus molestiae a doloribus ipsa facere itaque ex reprehenderit aspernatur eos nihil repudiandae tempora mollitia necessitatibus exercitationem, officiis distinctio debitis recusandae culpa voluptatum in vel error! Exercitationem architecto dicta nam ad soluta aperiam aspernatur sed, natus doloremque nostrum harum, iure, cum facilis cumque odio dignissimos deserunt itaque corporis. Similique, doloribus maiores commodi veritatis facilis esse totam tempore asperiores error! <p class="parafloat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium nesciunt at repudiandae quisquam magnam id eligendi eveniet ad laborum fugit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ex natus eligendi nostrum neque impedit, </p>Delectus maiores repellendus quidem exercitationem atque perspiciatis magnam mollitia cumque unde placeat autem esse fugiat quo error dolores dolor, modi repudiandae libero facilis ullam vitae minus blanditiis quibusdam at! Cumque culpa tempora consequuntur cum commodi illum soluta quisquam accusamus? Sint possimus a debitis necessitatibus quis inventore dignissimos, eius in doloribus id doloremque perspiciatis omnis officia ipsam, atque est ea et sed vero quod voluptatibus similique repudiandae! Cum, expedita.
+        </p>
+    <form action="" oninput="res.value=price.valueAsNumber*quantity.valueAsNumber">
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price">
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" id="quantity">
+        <label for="res">Total</label>
+        <output name="res" id="res">-</output>
+        <input type="submit">
+    </form>
+    <form action="" oninput="res.value=price.valueAsNumber*quantity.valueAsNumber">
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" min="0">
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" id="quantity">
+        <label for="res">Result</label>
+        <output name="res" id="res">-</output>
+        <input type="submit">
+    </form>
+
+    <div class="triangle"></div>
+</body>
+
+</html>

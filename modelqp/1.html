@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="/modelqp/1.js"></script>
+</head>
+<body>
+    <h1>Your Purchase Bill</h1>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>reg</td>
+            <td>10</td>
+            <td id="reg"></td>
+            <td id="regcost"></td>
+        </tr>
+        <tr>
+            <td>decaf</td>
+            <td>8</td>
+            <td id="decaf"></td>
+            <td id="decafcost"></td>
+        </tr>
+        <tr>
+            <td>mocha</td>
+            <td>11</td>
+            <td id="mocha"></td>
+            <td id="mochacost"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Total Bill:</td>
+            <td id="bill" colspan="2"></td>
+        </tr>
+    </table>
+    <button onclick="func()">Calculate Your Bills</button>
+</body>
+</html>

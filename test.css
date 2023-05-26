@@ -1,0 +1,12 @@
+p{
+    column-count: 3 !important;
+    background-color: red;
+}
+
+.test{
+    background-color: blue;
+}
+
+div{
+    background-color: yellow;
+}
